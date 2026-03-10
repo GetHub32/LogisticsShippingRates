@@ -1,8 +1,6 @@
-# Shipping Cost Calculator
-## Input package weight and shipping rate
-weight = float(input("Enter the package weight in kilograms: "))
-rate = float(input("Enter the shipping rate per kilogram: "))
-## Calculate shipping cost
-shipping_cost = weight * rate
-## Display the result
-print(f"Shipping Cost: {shipping_cost} USD")
+# Shipping_Cost_Calculator.py
+"""Backwards-compatible entrypoint for the original script."""
+from logistics.shipping import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())
