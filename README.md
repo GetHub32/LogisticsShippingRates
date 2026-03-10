@@ -1,13 +1,19 @@
-Please consider the below factors while contributing
-Code Style:
-Maintain a consistent code style for readability.
-Documentation:
-Ensure well-documented code for effective collaboration.
-Testing:
-Thoroughly test your changes before submitting a pull request.
-Issue Tracker:
-Check the Issue Tracker for tasks.
-Code Review:
-All contributions undergo a code review process.
-Licensing:
-Contributions are licensed.# LogisticsShippingRates
+# LogisticsShippingRates
+
+Simple project for calculating shipping cost.
+
+## Quickstart
+
+1. Create a virtualenv
+   python -m venv .venv
+   source .venv/bin/activate
+2. Install
+   pip install -r requirements.txt
+3. Run tests
+   pytest
+4. Use the module:
+   from src.logistics.shipping import calculate_shipping_cost
+   print(calculate_shipping_cost(2.0, 3.5))  # 7.0
+
+Command-line:
+   python -m src.logistics.shipping
